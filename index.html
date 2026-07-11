@@ -11,137 +11,208 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
 }
 
 body{
+font-family:Segoe UI, sans-serif;
 line-height:1.6;
 color:#333;
+background:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,0.95);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+nav h2{
+color:#214d2f;
+}
+
+nav a{
+text-decoration:none;
+color:#214d2f;
+font-weight:600;
+margin-left:20px;
 }
 
 .hero{
 height:100vh;
-background:url("aerial%20view.png") center center/cover;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("farm.png");
+background-size:cover;
+background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-}
-
-.overlay{
-background:rgba(0,0,0,0.55);
-padding:50px;
-border-radius:15px;
 color:white;
-max-width:800px;
+padding:20px;
 }
 
-.overlay h1{
-font-size:4rem;
-margin-bottom:15px;
+.hero-content{
+max-width:900px;
 }
 
-.overlay p{
-font-size:1.3rem;
+.hero h1{
+font-size:5rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.5rem;
 }
 
 section{
-padding:80px 10%;
+padding:100px 10%;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
 }
 
 h2{
+font-size:2.8rem;
+margin-bottom:25px;
+color:#214d2f;
 text-align:center;
-margin-bottom:30px;
-color:#2f5e2f;
+}
+
+.lead{
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:1.15rem;
 }
 
 .video-section{
-background:#f4f4f4;
+background:#f5f7f3;
 text-align:center;
 }
 
 video{
-width:90%;
-max-width:900px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
+width:100%;
+max-width:1000px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
+margin-top:50px;
 }
 
 .card{
-background:#f7faf7;
-padding:25px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-.footer{
-background:#2f5e2f;
+.card h3{
+margin-bottom:15px;
+color:#214d2f;
+}
+
+.dark-section{
+background:#214d2f;
+color:white;
+}
+
+.dark-section h2{
+color:white;
+}
+
+footer{
+background:#142d1c;
 color:white;
 text-align:center;
-padding:30px;
+padding:50px;
 }
 
-ul{
-max-width:800px;
-margin:auto;
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
 }
 
-li{
-margin-bottom:12px;
+.hero p{
+font-size:1.1rem;
+}
+
 }
 
 </style>
 </head>
-
 <body>
 
-<div class="hero">
-<div class="overlay">
+<nav>
+<h2>The Reset Grounds</h2>
 
-<h1>The Reset Grounds</h1>
+<div>
+#about
+#videoVideo</a>
+#programs
+</div>
+</nav>
 
-<p><strong>Reconnect. Lead. Transform.</strong></p>
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Reconnect. Lead. Transform.</h1>
 
 <p>
-Farm-Based Leadership Development for Executives,
-Corporate Teams and Burned-Out Professionals
+A farm-based leadership development experience where regenerative
+agriculture, animal care, physical work and executive coaching
+come together to create lasting transformation.
 </p>
 
 </div>
-</div>
-
-<section>
-
-<h2>About The Reset Grounds</h2>
-
-<p>
-The Reset Grounds is a farm-based leadership and transformation company
-designed for professionals seeking renewal, resilience, and personal growth.
-Through regenerative agriculture, animal care, equine-assisted learning,
-nature immersion and executive coaching, participants gain practical
-leadership experience away from traditional corporate environments.
-</p>
 
 </section>
 
-<section class="video-section">
+<section id="about">
 
-<h2>Watch Our Startup Concept</h2>
+<div class="container">
+
+<h2>A Different Kind of Leadership Development</h2>
+
+<p class="lead">
+Today's leaders spend most of their lives in front of screens,
+managing constant complexity and pressure. The Reset Grounds offers a
+powerful alternative: immersive experiences where executives and teams
+learn through nature, horses, farming, coaching and meaningful work.
+</p>
+
+</div>
+
+</section>
+
+<section id="video" class="video-section">
+
+<h2>Experience The Reset Grounds</h2>
 
 <video controls>
-The Reset Grounds_Final Video.mp4
+video.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 </section>
 
-<section>
+<section id="programs">
 
 <h2>Our Programs</h2>
 
@@ -149,56 +220,66 @@ Your browser does not support the video tag.
 
 <div class="card">
 <h3>Leadership Reset</h3>
-<p>3 Days</p>
-<p>€1,950 per participant</p>
+<p>
+3-day immersive transformation experience for professionals seeking
+renewal, resilience and perspective.
+</p>
 </div>
 
 <div class="card">
 <h3>Executive Immersion</h3>
-<p>5 Days</p>
-<p>€3,250 per participant</p>
+<p>
+5-day leadership journey integrating coaching, horse interaction,
+farming and nature-based learning.
+</p>
 </div>
 
 <div class="card">
-<h3>Team Transformation Retreat</h3>
-<p>Up to 20 participants</p>
-<p>Starting at €12,000</p>
+<h3>Team Transformation</h3>
+<p>
+Shared experiences that strengthen trust, communication and
+collaboration.
+</p>
 </div>
 
 <div class="card">
 <h3>Corporate Farm Day</h3>
-<p>One-Day Experience</p>
-<p>Starting at €3,500</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>What Makes Us Different?</h2>
-
-<ul>
-<li>Leadership development through real farm experiences</li>
-<li>Equine-assisted learning and horse-based coaching</li>
-<li>Nature immersion and digital detox</li>
-<li>Regenerative agriculture and meaningful physical work</li>
-<li>Mental well-being and burnout prevention</li>
-<li>Long-term coaching and transformation programs</li>
-</ul>
-
-</section>
-
-<div class="footer">
-
-<h3>The Reset Grounds</h3>
-
 <p>
-Entrepreneurship & Valuation Project
+A one-day leadership and team development experience designed for
+modern organizations.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="dark-section">
+
+<div class="container">
+
+<h2>Why It Works</h2>
+
+<p class="lead">
+Unlike traditional coaching retreats, The Reset Grounds integrates
+leadership development, equine-assisted learning, regenerative
+agriculture, nature immersion and meaningful physical work into one
+transformational experience.
 </p>
 
 </div>
+
+</section>
+
+<footer>
+
+<h2 style="color:white;">The Reset Grounds</h2>
+
+<p>
+Leadership Development Through Nature, Agriculture & Equine Learning
+</p>
+
+</footer>
 
 </body>
 </html>
