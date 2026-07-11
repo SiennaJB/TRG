@@ -1,3 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Reset Grounds</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#333;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+url("farm.png");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:30px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:5rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.4rem;
+}
+
+section{
+padding:90px 10%;
+}
+
+h2{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:25px;
+color:#214d2f;
+}
+
+.lead{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:1.1rem;
+}
+
+.video-section{
+background:#f5f7f3;
+text-align:center;
+}
+
+.video-wrapper{
+max-width:900px;
+margin:30px auto;
+}
+
+.video-wrapper video{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+max-width:1000px;
+margin:50px auto;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#214d2f;
+}
+
+.highlight{
+background:#214d2f;
+color:white;
+}
+
+.highlight h2{
+color:white;
+}
+
+.booking{
+background:#f5f7f3;
+text-align:center;
+}
+
+.button{
+display:inline-block;
+padding:15px 30px;
+background:#214d2f;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+margin-top:25px;
+}
+
+footer{
+background:#142d1c;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>The Reset Grounds</h1>
+
+<p><strong>Reconnect. Lead. Transform.</strong></p>
+
+<p>
+A farm-based leadership development experience where regenerative agriculture,
+animal care, equine-assisted learning, and executive coaching come together to create lasting transformation.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>A New Way to Develop Leaders</h2>
+
+<p class="lead">
+The Reset Grounds is designed for executives, professionals and teams seeking renewal,
+resilience and growth. By combining leadership coaching, regenerative agriculture,
+nature immersion and equine-assisted learning, participants gain fresh perspectives
+and practical leadership skills that extend far beyond the workplace.
+</p>
+
+</section>
+
 <section class="video-section">
 
 <h2>Watch Our Startup Pitch</h2>
@@ -7,20 +188,96 @@ Learn how The Reset Grounds combines leadership development,
 equine-assisted learning, regenerative agriculture and nature-based experiences.
 </p>
 
-<p style="margin-top:30px;">
-://siennajb.github.io/TRG/video.mp4"
-   target="_blank"
-   style="
-   display:inline-block;
-   padding:15px 30px;
-   background:#214d2f;
-   color:white;
-   text-decoration:none;
-   border-radius:50px;
-   font-weight:bold;">
-   ▶ Watch Video
-</a>
+<div class="video-wrapper">
+
+<video controls preload="metadata">
+siennajb.github.io/TRG/video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Our Programs</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Leadership Reset</h3>
+<p>
+A 3-day experience helping leaders reconnect with their values through coaching,
+nature immersion and meaningful farm work.
+</p>
+</div>
+
+<div class="card">
+<h3>Executive Immersion</h3>
+<p>
+A 5-day transformational journey integrating executive coaching,
+equine-assisted learning and regenerative agriculture.
+</p>
+</div>
+
+<div class="card">
+<h3>Team Transformation</h3>
+<p>
+An immersive team experience focused on communication,
+trust, collaboration and shared purpose.
+</p>
+</div>
+
+<div class="card">
+<h3>Corporate Farm Day</h3>
+<p>
+A one-day leadership and team-building experience providing
+a fresh perspective outside the traditional corporate environment.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="highlight">
+
+<h2>What Makes Us Different?</h2>
+
+<p class="lead">
+Unlike traditional retreats or coaching programs, The Reset Grounds integrates
+leadership development, animal care, regenerative agriculture,
+equine-assisted learning and nature-based experiences into one transformational model.
 </p>
 
 </section>
-`
+
+<section class="booking">
+
+<h2>Book a Discovery Call</h2>
+
+<p>
+Interested in bringing The Reset Grounds to your organization?
+Schedule a consultation to explore leadership development,
+team transformation and executive retreats.
+</p>
+
+#
+Book a Consultation
+</a>
+
+</section>
+
+<footer>
+
+<h3>The Reset Grounds</h3>
+
+<p>
+Reconnect. Lead. Transform.
+</p>
+
+</footer>
+
+</body>
+</html>
