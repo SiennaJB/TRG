@@ -205,9 +205,9 @@ learn through nature, horses, farming, coaching and meaningful work.
 
 <h2>Experience The Reset Grounds</h2>
 
-<video controls>
-video.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<video controls width="100%">
+    video.mp4
+    Your browser does not support the video tag.
 </video>
 
 </section>
@@ -216,7 +216,13 @@ Your browser does not support the video tag.
 
 <h2>Our Programs</h2>
 
-<div class="cards">
+.cards{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+max-width:1000px;
+margin:50px auto;
+}
 
 <div class="card">
 <h3>Leadership Reset</h3>
